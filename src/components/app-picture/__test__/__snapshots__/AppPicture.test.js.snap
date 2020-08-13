@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppPicture renders content with source tags, if leadImage has renditions 1`] = `
+<picture>
+  <source
+    key="/img-url-800.jpeg"
+    media="(max-width: 800px)"
+    srcSet="https://content-eu-4.content-cms.com/img-url-800.jpeg"
+  />
+  <source
+    key="/img-url.jpeg"
+    media="(max-width: 1600px)"
+    srcSet="https://content-eu-4.content-cms.com/img-url.jpeg"
+  />
+  <img
+    alt=""
+    src="https://content-eu-4.content-cms.com/img-url.jpeg"
+  />
+</picture>
+`;
+
+exports[`AppPicture renders content without source tags, if leadImage does not have renditions 1`] = `
+<picture>
+  <img
+    alt=""
+    src="https://content-eu-4.content-cms.com/img-url.jpeg"
+  />
+</picture>
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders learn react link 1`] = `
+<BrowserRouter>
+  <div
+    className="container"
+  >
+    <Route
+      exact={true}
+      path="/"
+    >
+      <Redirect
+        to="/fa9519d5-0363-4b8d-8e1f-627d802c08a8"
+      />
+    </Route>
+    <Route
+      component={[Function]}
+      path="/:id"
+    />
+  </div>
+</BrowserRouter>
+`;

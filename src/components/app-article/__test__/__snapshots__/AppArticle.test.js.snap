@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppArticle renders article content 1`] = `
+<AppArticle>
+  <article
+    className="AppArticle"
+  >
+    <h1
+      className="AppArticle__title"
+    >
+      Article title
+    </h1>
+    <AppPicture
+      altText="Image caption."
+      className="AppArticle__img"
+      leadImage={
+        Object {
+          "renditions": Object {
+            "default": Object {
+              "url": "/img-url.jpeg",
+              "width": 1600,
+            },
+          },
+          "url": "/img-url.jpeg",
+        }
+      }
+    >
+      <picture>
+        <source
+          key="/img-url.jpeg"
+          media="(max-width: 1600px)"
+          srcSet="https://content-eu-4.content-cms.com/img-url.jpeg"
+        />
+        <img
+          alt="Image caption."
+          className="AppArticle__img"
+          src="https://content-eu-4.content-cms.com/img-url.jpeg"
+        />
+      </picture>
+    </AppPicture>
+    <div
+      className="AppArticle__content-wrapper"
+    >
+      <span
+        className="AppArticle__info"
+      >
+        Article Author
+      </span>
+      <span
+        className="AppArticle__info"
+      >
+        13.12.2019
+      </span>
+      <div
+        className="AppArticle__text"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>Article text</p>",
+          }
+        }
+      />
+    </div>
+  </article>
+</AppArticle>
+`;
+
+exports[`AppArticle renders without crashing 1`] = `<AppLoader />`;
+
+exports[`AppArticle returns errors 1`] = `
+<AppArticle>
+  <AppErrors
+    errors="Sorry, but the article does not exist! Try another article ID."
+  >
+    <p
+      className="AppErrors"
+    >
+      Sorry, but the article does not exist! Try another article ID.
+    </p>
+  </AppErrors>
+</AppArticle>
+`;
